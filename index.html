@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Main Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+  <style>
+      body{ font-family:'Mali', cursive;
+      }
+  .tint {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,50, 0.4);
+  transition: background .3s linear;
+}
+
+.tint:hover:before {
+  background: none;
+}
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: cadetblue">
+  <a class="navbar-brand" href="#" style="background-blend-mode: exclusion;background-color: navy;color:darkturquoise;font-size: 20px;">Geek Public School</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-content="You are here."><i class="fa fa-home" style="font-size:30px;color:white"></i><span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#" title="Geek Public School" data-toggle="modal" data-target="#about">About</a>
+        <div class="modal" id="about">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+     
+        <div class="modal-header">
+          <h4 class="modal-title" >About us</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        
+        <div class="modal-body" style="background-color: greenyellow;color: green">
+          Your search for a great school for your word ends here.<br> Our 50 year old legacy will bring out the best in your child.<br>
+            We focus on holistic and well-rounded personality of your child and<br>make them ready to be the next gen world leaders.<br>
+            With us your child is not just a roll number but an oppurtunity to make world a better place.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer" style="background-color: coral;color: brown">
+         Remember, great schooling equals great future.
+        </div>
+        
+      </div>
+    </div>
+  </div>
+        </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
+         Explore
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="faculty.html">Faculty</a>
+          <a class="dropdown-item" href="gallery.html">Gallery</a>
+          
+        </div>
+      </li>
+        <li style="margin-left: 25px"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" style="font-size:30px;color:white;float: right;"></i></a></li>
+       
+        <li style="margin-left: 10px;"><a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:30px;color:white"></i></a></li>
+        <li style="margin-left: 10px;"><a href="https://www.gmail.com/"><i class="material-icons" style="font-size:30px;color: white">mail_outline</i></a></li>
+        <li style="margin-left: 10px;margin-bottom: 7px; font-size: 30px;color:white;">|</li>
+        <li style="margin-left: 10px;"><i class="fa fa-phone-square" style="font-size:30px;color:white">1800-900-2442</i></li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+       <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+       <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active tint">
+      <img src="https://eventage-images-dgxbmy4th.netdna-ssl.com/wp-content/uploads/2018/09/IMG_9638-1100x400.jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item tint">
+      <img src="http://www.stuartbinghamphotography.co.uk/wp-content/uploads/2016/08/science-lab-2-1100x400.jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item tint">
+      <img src="https://www.vestaviasoccer.com/wp-content/uploads/sites/6/2016/06/1100x400-20160627-regionals-01.png" width="1100" height="500">
+    </div>
+      <div class="carousel-item tint">
+      <img src="https://5rd1122q2fb2q9nsj36dtnqz-wpengine.netdna-ssl.com/wp-content/uploads/2015/04/sports-hall-volleyball-1100x400.jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item tint">
+      <img src="https://good-samaritan-school.com/wp-content/uploads/2017/07/DSC_0961-1-1100x400.jpg" width="1100" height="500">
+    </div>
+    <div class="carousel-item tint">
+        <img src="http://www.huntarchitects.co.uk/wp-content/uploads/2015/07/1222-PH-EXT-Square011-1100x400.jpg" width="1100" height="500"></div>
+        <div class="carousel-item tint">
+      <img src="http://www.parshvnathsahodayagiridih.org/wp-content/uploads/2018/08/honey-960x349.jpg" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+    <div class="display-3"  style="text-align: center;color: cornflowerblue">From Principal's Desk</div>
+    <div><img src="http://entertainment.inquirer.net/files/2014/12/1219nepales-13.jpg" style="float: left"></div>
+    <div style="float:right;color:brown;font-size:25px;">"It gives me an immense pleasure to be<br> part of this tremendously marvellous institution <br>which has been giving world leaders<br>and bringing breakthroughs in realm of education<br>for past 50 years.<br>This year I am glad to announce that we<br>have completed half a century of meaningful<br>existence and are more than motivated to<br> give best of our services to do our bit for<br> this country and its asset i.e. students."</div>
+    <div style="text-align: right;color:red;font-size:30px;"> -Dr. Stephen Strange</div>
+</body>
+</html>
